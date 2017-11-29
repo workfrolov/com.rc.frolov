@@ -13,13 +13,13 @@ public class PhoneNumberLoginPage extends BasePage {
         super(driver);
     }
 
-    RCaccount RCaccount = new RCaccount("","","");
+    RCaccount rcaccount = new RCaccount("","","");
     public void inputExtPin() {
-        sendText(By.id("pin"), RCaccount.getExtPin());
+        sendText(By.id("pin"), rcaccount.getExtPin());
     }
 
     public void inputExtPassword() {
-        sendText(By.id("password"), RCaccount.getExtPswd());
+        sendText(By.id("password"), rcaccount.getExtPswd());
     }
 
     public void ckickSignInButton(){

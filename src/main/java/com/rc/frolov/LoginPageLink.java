@@ -13,4 +13,8 @@ public class LoginPageLink {
     public String getLPLink() {
         return LPLink;
     }
+
+    //public void setLPLink(String LPLink) {
+    //    this.LPLink = LPLink;
+    //}
 }

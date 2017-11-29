@@ -11,8 +11,8 @@ public class PhoneSystemPage extends BasePage {
         super(driver);
     }
 
-    //String accountInfo = driver.findElement(By.cssSelector("span.extension-info")).getText();
-
-    //getText(By.cssSelector("span.extension-info"));
-
+    @Override
+    public String getText(By elementLocation) {
+        return super.getText(By.cssSelector("span.extension-info"));
+    }
 }

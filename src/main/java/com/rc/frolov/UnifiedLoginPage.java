@@ -12,14 +12,14 @@ public class UnifiedLoginPage extends BasePage {
         super(driver);
     }
 
-    LoginPageLink LoginPageLink = new LoginPageLink("");
+    LoginPageLink loginPageLink = new LoginPageLink("");
     public void goToUnifiedLoginPage() {
-        driver.get(LoginPageLink.getLPLink());
+        driver.get(loginPageLink.getLPLink());
     }
 
-    RCaccount RCaccount = new RCaccount("","","");
+    RCaccount rcaccount = new RCaccount("","","");
     public void inputPhoneNumber() {
-        sendText(By.id("credential"), RCaccount.getMainNumber());
+        sendText(By.id("credential"), rcaccount.getMainNumber());
     }
 
     public void ckickNextButton(){
